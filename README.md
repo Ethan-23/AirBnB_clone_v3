@@ -160,6 +160,7 @@ Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
 v4
 Maxwell Lovell - [Github](https://github.com/JohnBogey)
+Ethan Roberts - [Github](https://github.com/Ethan-23)
 
 Second part of Airbnb: Joann Vuong
 ## License
