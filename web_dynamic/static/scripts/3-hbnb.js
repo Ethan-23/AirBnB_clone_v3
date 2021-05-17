@@ -1,5 +1,4 @@
 #!/usr/bin/node
-  
 $(document).ready(function () {
   const listof = {};
   $('INPUT').change(function () {
@@ -10,15 +9,15 @@ $(document).ready(function () {
     }
     $('DIV.amenities h4').text(Object.values(listof).join(', '));
   });
-$.getJSON('http://0.0.0.0:5001/api/v1/status/', function (data) {
-  if (data.status === 'OK') {
-    $('DIV#api_status').addClass('available');
-    console.log('class added');
-  } else {
-    $('DIV#api_status').removeClass('available');
-    console.log('class removed');
-  }
-});
+  $.getJSON('http://0.0.0.0:5001/api/v1/status/', function (data) {
+    if (data.status === 'OK') {
+      $('DIV#api_status').addClass('available');
+      console.log('class added');
+    } else {
+      $('DIV#api_status').removeClass('available');
+      console.log('class removed');
+    }
+  });
   $.ajax({
     type: 'POST',
     url: 'http://0.0.0.0:5001/api/v1/places_search/',
@@ -42,7 +41,7 @@ $.getJSON('http://0.0.0.0:5001/api/v1/status/', function (data) {
         const description = $('<div class="description">' + place.description + '</div>');
         article.append(title, info, description);
         $('SECTION.places').append(article);
-        });
+      });
     }
   });
 });
